@@ -29,3 +29,30 @@ class login {
 
 }   
 ?>
+<html>
+    <head>
+        <title>ERP</title>
+    </head>
+    <body>
+        <div class="corpo">
+             
+            <form name="login" method="post" action="LoginForm.php">
+                <fieldset>
+                    <legend>Autenticação de usuário</legend>
+                    <label>Login</label>
+                    <input type="text" name="nome"/>
+                    <br>
+                    <label>Senha</label>
+                    <input type="password" name="senha"/>
+                    <br>
+                    <input type="submit" value="Enviar" name="envia" />
+                    <input type="reset" value="Limpar" name="limpa"/>
+                </fieldset>
+                    
+                    
+            </form>
+             
+
+    </body>
+</html>
+
