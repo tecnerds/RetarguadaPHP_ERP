@@ -1,42 +1,26 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title></title>
+        <meta charset="utf8">
+        <title>Menu | SPPHP</title>
     </head>
     <body>
-        <div class="corpo">
-            <table>
-                    <!td coluna
-                      tr linha-->
-                <td id="1">
-                    <tr id="1">
-                        <h3>Cadastro</h3>
-                        <ul>
-                            <li>Produto</li>
-                            <li>Grupo</li>
-                            <li>Subgrupo</li>
-                            <li>Família</li>
-                        </ul>
-                            
-                    </tr>
-                    <td id="2">
-                        <h3>Consulta</h3>
-                    </td>
-                </td>
-                
-                    
-            </table>
-            
-        </div>
-        <?php
-        // put your code here
-        ?>
+    <center><h1>Tela Principal</h1></center>
+        <ul>
+            <h3>Produto</h3>
+            <a href="produto.php"><li>Produto</li></a>
+            <a href="grupo.php"><li>Grupo</li></a>
+            <a href="subgrupo.php"><li>Subgrupo</li></a>
+            <h3>Fornecedor</h3>
+            <a href="#"><li>Fornecedor</li></a>
+            <a href="#"><li>Pedido</li></a>
+            <h3>Usuário</h3>
+            <a href="#"><li>Usuário</li></a>
+            <h3>Relatórios</h3>
+            <li><strong>Em construção</strong></li>
+        </ul>
     </body>
 </html>
+        
+   
 
