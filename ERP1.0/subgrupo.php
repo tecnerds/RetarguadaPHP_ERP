@@ -18,7 +18,7 @@ and open the template in the editor.
                 <input type="text" name="nome"/>
                 <br/>
                 <label>Descrição</label>
-                <input type="text" name="desc"/>
+                <textarea maxlength="100" name="desc"></textarea>
                 <br/>
                 <input type="submit" value="Salvar"/>
                 <input type="reset" value="Cancelar"/>

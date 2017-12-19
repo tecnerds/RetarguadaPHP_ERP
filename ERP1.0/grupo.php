@@ -16,10 +16,10 @@ and open the template in the editor.
             <fieldset>
                 <legend>Cadastro de Grupo</legend>
                 <label>Nome</label>
-                <input type="text" name="nome"/>
+                <input type="text" name="nome" maxlength="40"/>
                 <br/>
                 <label>Descrição</label>
-                <input type="text" name="desc"/>
+                <textarea maxlength="100" name="desc"></textarea>
                 <br/>
                 <input type="submit" value="Salvar"/>
                 <input type="reset" value="Cancelar"/>

@@ -22,7 +22,7 @@ and open the template in the editor.
                 <input type="text" name="codBarra"/>
                 <br/>
                 <label>Descrição</label>
-                <input type="text" name="desc"/>
+                <textarea maxlength="100" name="desc"></textarea>
                 <br/>
                 <label>Valor Custo</label>
                 <input type="text" name="vCusto"/>
