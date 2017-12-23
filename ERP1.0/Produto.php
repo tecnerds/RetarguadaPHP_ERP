@@ -1,9 +1,7 @@
+<?php
+    include_once 'Banco.php';
+?>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
@@ -35,6 +33,13 @@ and open the template in the editor.
                 
             </fieldset>
         </form>
-        <a href="cadastro.php">Menu de Cadastro</a>
+        <a href="index.php">Menu de Cadastro</a>
+      
+          <iframe src="relatorio/consultaProduto.php" width="100%" height="500px">Produto</iframe>
+        
+        <?php 
+            mysqli_close($conexao);
+        ?>  
+      
     </body>
 </html>

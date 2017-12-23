@@ -17,6 +17,17 @@
                 $sql = "insert into produto (nome, codBarra, descricao, vCusto, vVenda) values ('$nome','$codBarra','$descricao','$vCusto','$vVenda');";
                 if($salva = mysqli_query($conexao, $sql)){
                     echo "<p>Cadastro realizado com sucesso!</p>";
+
+                     $link = ['../produto.php', '../relatorio/consultaProduto.php', '../index.php'];
+                     $menu = ['Novo Produto', 'Consulta Produto', 'Menu Principal'];
+                    echo "<ul>";
+                        for ($i=0; $i<3; $i++){
+
+                            echo "<a href='$link[$i]'><li>$menu[$i]</li></a>";
+
+                        }
+
+                    echo "</ul>";
                     
                                         
 
@@ -25,16 +36,12 @@
 
 
             mysqli_close($conexao);
-         ?>   
-
+         ?> 
+         <br>
+         <iframe src="../relatorio/consultaProduto.php" width="100%" height="500px">Produto</iframe>
         
-        <ul>
-            <a href="../produto.php"><li>Novo Produto</li></a>
-            <a href="consultaProduto.php"><li>Consultar Produto</li></a>
-            <a href="../cadastro.php"><li>Menu Principal</li></a>
-        </ul>
-
-           
+               
+    </body> 
         
          
 </html>

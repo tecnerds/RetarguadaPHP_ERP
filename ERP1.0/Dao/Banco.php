@@ -1,9 +1,9 @@
 <?php
 
-$servidor = "localhost";
-$usuario = "patrick";
-$senha = "123";
-$banco = "erp_homologacao";
+$servidor = "xmysql.supermercadovanusa.com.br";
+$usuario = "supermercadovan";
+$senha = "hAcker99";
+$banco = "supermercadovanusa";
 
 $conexao = mysqli_connect($servidor, $usuario, $senha, $banco);
 if (!$conexao) {
