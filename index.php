@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title></title>
+        <meta charset="utf8">
+        <title>Menu | SPPHP</title>
     </head>
     <body>
-       
-        <?php
-            require_once 'Conexao.php';
-            $bd = new Conexao;
-            
-        ?>
+    <center><h1>Tela Principal</h1></center>
+        <ul>
+            <h3>Produto</h3>
+            <a href="produto.php"><li>Produto</li></a>
+            <!--<a href="grupo.php"><li>Grupo</li></a> 
+            <a href="subgrupo.php"><li>Subgrupo</li></a> 
+            <h3>Fornecedor</h3>
+            <a href="#"><li>Fornecedor</li></a>
+            <a href="#"><li>Pedido</li></a>
+            <h3>Usuário</h3>
+            <a href="#"><li>Usuário</li></a>
+            <h3>Relatórios</h3>-->
+            <br>
+            <li><strong>Sistema em Construção</strong></li>
+        </ul>
     </body>
 </html>
+        
+   
+
