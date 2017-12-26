@@ -1,27 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf8">
-        <title>Menu | SPPHP</title>
-    </head>
-    <body>
-    <center><h1>Tela Principal</h1></center>
-        <ul>
-            <h3>Produto</h3>
-            <a href="produto.php"><li>Produto</li></a>
-            <!--<a href="grupo.php"><li>Grupo</li></a> 
-            <a href="subgrupo.php"><li>Subgrupo</li></a> 
-            <h3>Fornecedor</h3>
-            <a href="#"><li>Fornecedor</li></a>
-            <a href="#"><li>Pedido</li></a>
-            <h3>Usuário</h3>
-            <a href="#"><li>Usuário</li></a>
-            <h3>Relatórios</h3>-->
-            <br>
-            <li><strong>Sistema em Construção</strong></li>
-        </ul>
-    </body>
+<head>
+<meta http-equiv="refresh" content="0;url=SBAdmin/pages/index.php">
+<title>SB Admin 2</title>
+<script language="javascript">
+    window.location.href = "SBAdmin/pages/index.php"
+</script>
+</head>
+<body>
+Go to <a href="SBAdmin/pages/index.php">/pages/index.php</a>
+</body>
 </html>
-        
-   
-
+<!--ESTÁ REDIRECIONANDO PARA ONDE AS PÁGINAS ESTÃO, PORÉM HÁ COMO FAZER ISSO DE FORMA MELHOR.
+	VAMOS DECIDIR COMO VAI FICAR AS COISAS PRIMEIRO E DEPOIS VEMOS ISSO.-->
