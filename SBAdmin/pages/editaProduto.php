@@ -319,35 +319,46 @@
 
 <!-- /.row -->
 <div class="row">
+    
+    <?php
+        include_once'../../Modulos/Database/alteraProdutoDao.php';
+        $id=$_GET['id'];
 
+      ?>
+      
+    
             <div class="col-lg-4">
-                <form role="form" method="post" action="../../Modulos/Database/ProdutoDao.php">
+                <form role="form" method="post" action="../../Modulos/Database/editaProdutoDao.php">
                         <div class="form-group">
                             <label>Código Interno:</label>
-                            <p class="form-control-static">Busca o próximo ID disponível</p>
+                            <p class="form-control-static"><?php echo $id; ?></p>
+                <form role="form" method="post" action=>
+                    <input type="hidden" name="id" value='<?php echo $id; ?>'>
                         </div>                    
                         <div class="form-group">
                             <label>Nome do produto:</label>
-                            <input name="nome" class="form-control" placeholder="40 caracteres no máximo" required >
+                            <input name="nome" class="form-control" placeholder="40 caracteres no máximo" required value='<?php echo $nome; ?>'>
                         </div>
                         <div class="form-group">
                             <label>Código de barras:</label>
-                            <input name="codBarra" type="number" class="form-control" placeholder="13 dígitos no máximo">
+                            <input name="codBarra" type="number" class="form-control" placeholder="13 dígitos no máximo" value='<?php echo $codBarra; ?>'>
                         </div>
                         <div class="form-group">
                             <label>Valor custo:</label>
-                            <input name="vCusto" type="text" class="form-control">
+                            <input name="vCusto" type="text" class="form-control" value='<?php echo $vCusto; ?>'>
                         </div>
                         <div class="form-group">
                             <label>Valor venda:</label>
-                            <input name="vVenda" type="text" class="form-control" required>
+                            <input name="vVenda" type="text" class="form-control" required value='<?php echo $vVenda; ?>'>
                         </div>
                         <div class="form-group">
                             <label>Descrição:</label>
-                            <textarea name="desc" class="form-control" rows="3" placeholder="100 caracteres no máximo"></textarea>
+                            <textarea name="desc" class="form-control" rows="3" placeholder="100 caracteres no máximo"><?php echo $descricao; ?></textarea>
                         </div>
-                        <button type="submit" class="btn btn-default">Salvar cadastro</button>
+                        <button type="button" class="btn btn-default">Editar</button>
+                        <button type="submit" class="btn btn-default">Salvar Alteração</button>
                         <button type="reset" class="btn btn-default">Limpar</button>
+
                 </form>
             </div>
 

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -285,10 +286,10 @@
                         </li>
                        
                         <li>
-                            <a href="Produtos.php"><i class="fa fa-table fa-fw"></i> Produtos</a>
+                            <a href="produtos.php"><i class="fa fa-table fa-fw"></i> Produtos</a>
                         </li>
                         <li>
-                            <a href="Pessoas.php"><i class="fa fa-edit fa-fw"></i> Pessoas</a>
+                            <a href="fornecedor.php"><i class="fa fa-edit fa-fw"></i> Fornecedor</a>
                         </li>
                         
                     </ul>
@@ -318,7 +319,7 @@
                             Painel de ações:
                         </div>
                         <div class="panel-body">
-                           <a href="CadastrarProdutos.php"><button type="button" class="btn btn-primary">Cadastrar novo produto</button></a>
+                           <a href="cadastrarProdutos.php"><button type="button" class="btn btn-primary">Cadastrar novo produto</button></a>
                             <button type="button" class="btn btn-primary disabled">Gerar relatório</button>
 
                         </div>
@@ -339,9 +340,10 @@
                             <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                                 <thead>
                                     <tr>
+                                        <th>Código Interno</th>
                                         <th>Nome do produto</th>
-                                        <th>Código de barras</th>
                                         <th>Descrição</th>
+                                        <th>Código de barras</th>
                                         <th>Valor custo</th>
                                         <th>Valor venda</th>
                                     </tr>
