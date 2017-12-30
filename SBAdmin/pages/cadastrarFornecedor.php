@@ -266,6 +266,7 @@
             </ul>
             <!-- /.navbar-top-links -->
 
+
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
@@ -293,8 +294,6 @@
                         
                     </ul>
                 </div>
-                <!-- /.sidebar-collapse -->
-            </div>
             <!-- /.navbar-static-side -->
         </nav>
 
@@ -303,70 +302,65 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Cadastro e consulta de fornecedor</h1>
+                        <h1 class="page-header">Cadastro de produtos</h1>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
-                <!-- /.row -->
-                <div class="row">
 
+<!--IMPUTS AQUI-->
+<div class="row">
+<div class="col-lg-12">
+<div class="panel panel-default">
 
-                <!-- PAINEL SUPERIOR AQUI -->
-                <div class="col-lg-4">
-                    <div class="panel panel-default">
-                 <div class="panel-heading">
-                            Painel de ações:
+<div class="panel-heading">
+    Preencha os campos abaixo:
+</div>
+<div class="panel-body">
+
+<!-- /.row -->
+<div class="row">
+
+            <div class="col-lg-4">
+                <form role="form" method="post" action="../../Modulos/Database/fornecedorDao.php">
+                        <div class="form-group">
+                            <label>Código Interno:</label>
+                            <p class="form-control-static">Busca o próximo ID disponível</p>
+                        </div>                    
+                        <div class="form-group">
+                            <label>Razão Social:</label>
+                            <input name="razaoSocial" class="form-control" placeholder="40 caracteres no máximo" required>
                         </div>
-                        <div class="panel-body">
-                           <a href="cadastrarFornecedor.php"><button type="button" class="btn btn-primary">Cadastrar novo Fornecedor</button></a>
-                            <button type="button" class="btn btn-primary disabled">Gerar relatório</button>
-
+                        <div class="form-group">
+                            <label>CNPJ:</label>
+                            <input name="cnpj" type="number" class="form-control" placeholder="Campo só aceita números" required>
                         </div>
-
-                    </div>
-                </div>
-
-
-  <!--TABELA AQUI-->
-
-     <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Últimos Fornecedores cadastrados:
+                        <div class="form-group">
+                            <label>Nome Fantasia:</label>
+                            <input name="nomeFantasia" type="text" class="form-control" required>
                         </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
-                                <thead>
-                                    <tr>
-                                        <th>Código Interno</th>
-                                        <th>Razão social</th>
-                                        <th>CNPJ</th>
-                                        <th>Nome Fantazia</th>
-                                        <th>Telefone</th>
-                                        <th>Contato</th>
-                                        <th>E-mail</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                       <?php include_once '../../Modulos/SRelatorio/consultaFornecedor.php'; ?>
-                                </tbody>
-                            </table>
-                            <!-- /.table-responsive -->
-                            
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
+                        <div class="form-group">
+                            <label>Telefone/Celular:</label>
+                            <input name="tel" type="number" class="form-control" placeholder="Campo só aceita números">
+                        </div>
+                        <div class="form-group">
+                            <label>Contato:</label>
+                            <input type="text" name="contato" class="form-control" placeholder="40 caracteres no máximo">
+                        <div class="form-group">
+                            <label>E-mail</label>
+                            <input type="mail" name="email" class="form-control" placeholder="seuemail@seuemail">        
+                        </div>
+                        </div>
+                        <button type="submit" class="btn btn-default">Salvar cadastro</button>
+                        <button type="reset" class="btn btn-default">Limpar</button>
+                </form>
             </div>
 
+</div>
 
-
-
-
-
-
-            </div>
+</div>
+</div>
+</div>
+</div>
             <!-- /.container-fluid -->
         </div>
         <!-- /#page-wrapper -->

@@ -288,7 +288,7 @@
                             <a href="produtos.php"><i class="fa fa-table fa-fw"></i> Produtos</a>
                         </li>
                         <li>
-                            <a href="fornecedor.php"><i class="fa fa-edit fa-fw"></i> Fornecedor</a>
+                            <a href="pessoas.php"><i class="fa fa-edit fa-fw"></i> Pessoas</a>
                         </li>
                         
                     </ul>
@@ -303,70 +303,31 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Cadastro e consulta de fornecedor</h1>
+                        <h1 class="page-header">Cadastro e consulta de pessoas</h1>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
                 <!-- /.row -->
+
                 <div class="row">
 
-
-                <!-- PAINEL SUPERIOR AQUI -->
                 <div class="col-lg-4">
-                    <div class="panel panel-default">
-                 <div class="panel-heading">
-                            Painel de ações:
-                        </div>
-                        <div class="panel-body">
-                           <a href="cadastrarFornecedor.php"><button type="button" class="btn btn-primary">Cadastrar novo Fornecedor</button></a>
-                            <button type="button" class="btn btn-primary disabled">Gerar relatório</button>
-
-                        </div>
-
-                    </div>
-                </div>
-
-
-  <!--TABELA AQUI-->
-
-     <div class="col-lg-12">
-                    <div class="panel panel-default">
+                    <div class="panel panel-red">
                         <div class="panel-heading">
-                            Últimos Fornecedores cadastrados:
+                            Não há nada aqui!
                         </div>
-                        <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
-                                <thead>
-                                    <tr>
-                                        <th>Código Interno</th>
-                                        <th>Razão social</th>
-                                        <th>CNPJ</th>
-                                        <th>Nome Fantazia</th>
-                                        <th>Telefone</th>
-                                        <th>Contato</th>
-                                        <th>E-mail</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                       <?php include_once '../../Modulos/SRelatorio/consultaFornecedor.php'; ?>
-                                </tbody>
-                            </table>
-                            <!-- /.table-responsive -->
-                            
-                        <!-- /.panel-body -->
+                            <p>Nosso projeto está engatinhando aos poucos, nem mesmo começamos com o cadastro e consulta de pessoas ainda. Logo mais você verá coisas acontecendo por aqui.</p>
+                        </div>
+                        <div class="panel-footer">
+                            Volte mais tarde
+                        </div>
                     </div>
-                    <!-- /.panel -->
                 </div>
             </div>
+              
 
 
-
-
-
-
-
-            </div>
             <!-- /.container-fluid -->
         </div>
         <!-- /#page-wrapper -->

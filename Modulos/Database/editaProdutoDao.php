@@ -31,16 +31,3 @@
 
 	mysqli_close($conexao);
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>teste</title>
-</head>
-<body>
-	<?php
-		$dataHoraCadastro = date("Y-m-d H:i:s"); 
-		echo $dataHoraCadastro; 
-		echo "<br>".$id."<br>". $nome."<br>". $codBarra."<br>". $descricao."<br>". $vCusto."<br>". $vVenda;
-	?>
-</body>
-</html>
