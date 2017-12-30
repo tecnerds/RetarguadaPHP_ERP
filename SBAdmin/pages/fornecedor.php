@@ -266,7 +266,6 @@
             </ul>
             <!-- /.navbar-top-links -->
 
-
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
@@ -294,6 +293,8 @@
                         
                     </ul>
                 </div>
+                <!-- /.sidebar-collapse -->
+            </div>
             <!-- /.navbar-static-side -->
         </nav>
 
@@ -302,61 +303,70 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Cadastro de produtos</h1>
+                        <h1 class="page-header">Cadastro e consulta de fornecedor</h1>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
+                <!-- /.row -->
+                <div class="row">
 
-<!--IMPUTS AQUI-->
-<div class="row">
-<div class="col-lg-12">
-<div class="panel panel-default">
 
-<div class="panel-heading">
-    Preencha os campos abaixo:
-</div>
-<div class="panel-body">
+                <!-- PAINEL SUPERIOR AQUI -->
+                <div class="col-lg-4">
+                    <div class="panel panel-default">
+                 <div class="panel-heading">
+                            Painel de ações:
+                        </div>
+                        <div class="panel-body">
+                           <a href="cadastrarProdutos.php"><button type="button" class="btn btn-primary">Cadastrar novo Fornecedor</button></a>
+                            <button type="button" class="btn btn-primary disabled">Gerar relatório</button>
 
-<!-- /.row -->
-<div class="row">
+                        </div>
 
-            <div class="col-lg-4">
-                <form role="form" method="post" action="../../Modulos/Database/ProdutoDao.php">
-                        <div class="form-group">
-                            <label>Código Interno:</label>
-                            <p class="form-control-static">Busca o próximo ID disponível</p>
-                        </div>                    
-                        <div class="form-group">
-                            <label>Nome do produto:</label>
-                            <input name="nome" class="form-control" placeholder="40 caracteres no máximo" required >
+                    </div>
+                </div>
+
+
+  <!--TABELA AQUI-->
+
+     <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Últimos Fornecedores cadastrados:
                         </div>
-                        <div class="form-group">
-                            <label>Código de barras:</label>
-                            <input name="codBarra" type="number" class="form-control" placeholder="13 dígitos no máximo">
-                        </div>
-                        <div class="form-group">
-                            <label>Valor custo:</label>
-                            <input name="vCusto" type="text" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label>Valor venda:</label>
-                            <input name="vVenda" type="text" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Descrição:</label>
-                            <textarea name="desc" class="form-control" rows="3" placeholder="100 caracteres no máximo"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-default">Salvar cadastro</button>
-                        <button type="reset" class="btn btn-default">Limpar</button>
-                </form>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                <thead>
+                                    <tr>
+                                        <th>Código Interno</th>
+                                        <th>Razão social</th>
+                                        <th>CNPJ</th>
+                                        <th>Nome Fantazia</th>
+                                        <th>Telefone</th>
+                                        <th>Contato</th>
+                                        <th>E-mail</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        
+                                </tbody>
+                            </table>
+                            <!-- /.table-responsive -->
+                            
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
             </div>
 
-</div>
 
-</div>
-</div>
-</div>
-</div>
+
+
+
+
+
+            </div>
             <!-- /.container-fluid -->
         </div>
         <!-- /#page-wrapper -->

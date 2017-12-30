@@ -285,10 +285,10 @@
                         </li>
                        
                         <li>
-                            <a href="Produtos.php"><i class="fa fa-table fa-fw"></i> Produtos</a>
+                            <a href="produtos.php"><i class="fa fa-table fa-fw"></i> Produtos</a>
                         </li>
                         <li>
-                            <a href="Pessoas.php"><i class="fa fa-edit fa-fw"></i> Pessoas</a>
+                            <a href="pessoas.php"><i class="fa fa-edit fa-fw"></i> Pessoas</a>
                         </li>
                         
                     </ul>
