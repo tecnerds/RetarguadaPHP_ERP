@@ -68,7 +68,8 @@
                         </div>
                         <div class="panel-body">
                            <a href="cadastrarProdutos.php"><button type="button" class="btn btn-primary">Cadastrar novo produto</button></a>
-                            <button type="button" class="btn btn-primary disabled">Gerar relatório</button>
+                           <a href="deletaProdutos.php"><button type="button" class="btn btn-primary">Deletar produtos</button></a><br> 
+                           <button type="button" class="btn btn-primary disabled">Gerar relatório</button>
 
                         </div>
 
@@ -85,7 +86,7 @@
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                            <table class="table table-hover table-responsive" id="dataTables-example">
                                 <thead>
                                     <tr>
                                         <th>Código Interno</th>
