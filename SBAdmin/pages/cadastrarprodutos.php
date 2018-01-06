@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>VNS Admin</title>
+    <title>ERP PN v0.1</title>
 
     <!-- PACE -->
     <script src="../../Plugins/PACE/PACE.js"></script>
@@ -266,7 +266,6 @@
             </ul>
             <!-- /.navbar-top-links -->
 
-
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
@@ -286,14 +285,21 @@
                         </li>
                        
                         <li>
-                            <a href="produtos.php"><i class="fa fa-table fa-fw"></i> Produtos</a>
+                            <a href="produtos.php"><i class="fa fa-table fa-fw"></i> Produto</a>
                         </li>
                         <li>
-                            <a href="fornecedor.php"><i class="fa fa-edit fa-fw"></i> Fornecedor</a>
+                            <a href="fornecedor.php"><i class="fa fa-table fa-fw"></i> Fornecedor</a>
+                        </li>
+                        <li>
+                            <a href="pedido.php"><i class="fa fa-table fa-fw"></i> Pedido</a>
                         </li>
                         
                     </ul>
                 </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+                <!-- /.sidebar-collapse -->
+            </div>
             <!-- /.navbar-static-side -->
         </nav>
 
@@ -321,33 +327,33 @@
 <div class="row">
 
             <div class="col-lg-4">
-                <form role="form" method="post" action="../../Modulos/Database/ProdutoDao.php">
+                <form role="form" action="../../Modulos/Database/ProdutoDao.php" method="get">
                         <div class="form-group">
-                            <label>Código Interno:</label>
-                            <p class="form-control-static">Busca o próximo ID disponível</p>
+                            <label>ID:</label>
+                            <p class="form-control-static">10001</p>
                         </div>                    
                         <div class="form-group">
                             <label>Nome do produto:</label>
-                            <input name="nome" class="form-control" placeholder="40 caracteres no máximo" required >
+                            <input name="nome" class="form-control" placeholder="100 caracteres no máximo" required>
                         </div>
                         <div class="form-group">
                             <label>Código de barras:</label>
-                            <input name="codBarra" type="number" class="form-control" placeholder="13 dígitos no máximo">
+                            <input name="codBarra" type="number" class="form-control" placeholder="20 dígitos no máximo" required>
                         </div>
                         <div class="form-group">
                             <label>Valor custo:</label>
-                            <input name="vCusto" type="text" class="form-control">
+                            <input name="vCusto" type="number" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label>Valor venda:</label>
-                            <input name="vVenda" type="text" class="form-control" required>
+                            <input name="vVenda" type="number" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label>Descrição:</label>
-                            <textarea name="desc" class="form-control" rows="3" placeholder="100 caracteres no máximo"></textarea>
+                            <textarea name="desc" class="form-control" rows="3" placeholder="700 caracteres no máximo" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-default">Salvar cadastro</button>
-                        <button type="reset" class="btn btn-default">Limpar</button>
+                        <button type="reset" class="btn btn-default">Resetar</button>
                 </form>
             </div>
 
