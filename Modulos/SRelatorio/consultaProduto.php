@@ -15,8 +15,8 @@ include_once '../../Modulos/Database/Banco.php';
 	    $nome = $resultado[1];
 	    $codBarra = $resultado[2];
 	    $descricao = $resultado[3];
-	    $vCusto = $resultado[4];
-	    $vVenda = $resultado[5];
+	    $vCusto = "R$". number_format((float)$resultado[4], 2, ',', '.');
+	    $vVenda = "R$". number_format((float)$resultado[5], 2, ',', '.');
         //$dataCadastro = $resultado[6]
 
         
